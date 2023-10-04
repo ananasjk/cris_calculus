@@ -1,35 +1,31 @@
-<!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
-<body>
-<p>
-    Вес человека (килограммы) <br>
-    <input type="number" id="ves_ch" placeholder="Вес человека">
-</p>
-<p>
-    Вес крысы (граммы) <br>
-    <input type="number" id="ves_c" placeholder="Вес крысы">
-</p>
-<p>
-    Доза для человека (миллиграммы)<br>
-    <input type="number" id="doza" placeholder="Доза человека">
-</p>
-<p id="1">
-    Доза крысы:
-</p>
-<p>
-    <img src="https://kartinkof.club/uploads/posts/2022-04/1649614369_2-kartinkof-club-p-ugarnie-kartinki-pro-kris-2.jpg" width="300vw">
-</p>
-<script>
-    const str = "Доза крысы: "
-    document.addEventListener("keyup", calculate);
-    function calculate() {
-        var ves_ch = document.getElementById("ves_ch").value;
-        var ves_c = document.getElementById("ves_c").value;
-        var doza = document.getElementById("doza").value;
-        otvet = (((doza * ((0.001*ves_c/ves_ch)**0.67)).toFixed(2)).toString());
-        otvet_str = str.concat(otvet, " милиграмм");
-        var otvet_field = document.getElementById("1");
-        otvet_field.innerHTML=otvet_str;
-    };
-</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Лучок чурка</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Footer-Dark-icons.css">
+</head>
+
+<body style="max-height: 100vh;color: var(--bs-white);font-family: Roboto, sans-serif;">
+    <header style="background: var(--bs-border-color-translucent);border-bottom-right-radius: 1vh;border-bottom-left-radius: 1vh;">
+        <p style="text-align: center;padding-top: 1vh;padding-bottom: 1vh;border-bottom-right-radius: 1vh;border-bottom-left-radius: 1vh;">Расчёт дозировки лекарства для крысы</p>
+    </header>
+    <p style="padding-left: 5vw;">Вес человека (в килограммах)</p><input type="number" id="ves_ch" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;margin-bottom: 1.5vh;color: var(--bs-white);" placeholder="Вес человека">
+    <p style="padding-left: 5vw;margin-top: 8px;">Вес крысы (в граммах)</p><input type="number" id="ves_c" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;color: var(--bs-white);" placeholder="Вес крысы">
+    <p style="padding-left: 5vw;margin-top: 8px;">Дозировка для человека (в милиграммах)</p><input type="number" id="doza" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;color: var(--bs-white);" placeholder="Дозировка">
+    <p id="1" style="padding-left: 5vw;margin-top: 1.5vh;">Доза крысы:</p><img style="border-radius: 1vh;width: 90vw;margin-left: 5vw;" src="assets/img/1649614369_2-kartinkof-club-p-ugarnie-kartinki-pro-kris-2.jpg">
+    <footer class="fixed-bottom" style="background: var(--bs-border-color-translucent);color: var(--bs-white);border-radius: 0;border-top-left-radius: 1vh;border-top-right-radius: 1vh;">
+        <p style="padding-top: 2vh;--bs-link-color: var(--bs-gray-900);color: var(--bs-gray-600);text-align: center;">with &lt;3 from <a href="https://vk.com/ananasjkk">@ananasjkk</a></p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bold-and-dark.js"></script>
+    <script src="assets/js/calculate.js"></script>
 </body>
+
+</html>
