@@ -1,0 +1,31 @@
+<!doctype html>
+<body>
+<p>
+    <input type="number" id="ves_ch" placeholder="Вес человека">
+</p>
+<p>
+    <input type="number" id="ves_c" placeholder="Вес крысы">
+</p>
+<p>
+    <input type="number" id="doza" placeholder="Доза человека">
+</p>
+<p id="1">
+    Доза крысы:
+</p>
+<p>
+    <input id="button" type="submit" name="button" onclick="calculate();" value="enter"/>
+</p>
+
+<script>
+    const str = "Доза крысы: "
+    function calculate() {
+        var ves_ch = document.getElementById("ves_ch").value;
+        var ves_c = document.getElementById("ves_c").value;
+        var doza = document.getElementById("doza").value;
+        otvet = (((doza * ((0.001*ves_c/ves_ch)**0.67)).toFixed(2)).toString());
+        otvet_str = str.concat(otvet, " милиграмм");
+        var otvet_field = document.getElementById("1");
+        otvet_field.innerHTML=otvet_str;
+    };
+</script>
+</body>
