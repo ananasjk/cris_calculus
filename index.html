@@ -4,26 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Лучок чурка</title>
+    <title>CrisCalculus</title>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
     <link rel="stylesheet" href="assets/css/Footer-Dark-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body style="max-height: 100vh;color: var(--bs-white);font-family: Roboto, sans-serif;">
-    <header style="background: var(--bs-border-color-translucent);border-bottom-right-radius: 1vh;border-bottom-left-radius: 1vh;">
+    <header data-aos="fade" data-aos-duration="750" data-aos-delay="300" style="background: var(--bs-border-color-translucent);border-bottom-right-radius: 1vh;border-bottom-left-radius: 1vh;">
         <p style="text-align: center;padding-top: 1vh;padding-bottom: 1vh;border-bottom-right-radius: 1vh;border-bottom-left-radius: 1vh;">Расчёт дозировки лекарства для крысы</p>
     </header>
-    <p style="padding-left: 5vw;">Вес человека (в килограммах)</p><input type="number" id="ves_ch" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;margin-bottom: 1.5vh;color: var(--bs-white);" placeholder="Вес человека">
-    <p style="padding-left: 5vw;margin-top: 8px;">Вес крысы (в граммах)</p><input type="number" id="ves_c" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;color: var(--bs-white);" placeholder="Вес крысы">
-    <p style="padding-left: 5vw;margin-top: 8px;">Дозировка для человека (в милиграммах)</p><input type="number" id="doza" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;color: var(--bs-white);" placeholder="Дозировка">
-    <p id="1" style="padding-left: 5vw;margin-top: 1.5vh;">Доза крысы:</p><img style="border-radius: 1vh;width: 90vw;margin-left: 5vw;" src="assets/img/1649614369_2-kartinkof-club-p-ugarnie-kartinki-pro-kris-2.jpg">
+    <p data-aos="fade" data-aos-duration="300" data-aos-delay="500" style="padding-left: 5vw;">Вес человека (в килограммах)</p><input type="number" data-aos="fade" data-aos-duration="300" data-aos-delay="600" id="ves_ch" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;margin-bottom: 1.5vh;color: var(--bs-white);" placeholder="Вес человека">
+    <p data-aos="fade" data-aos-duration="300" data-aos-delay="700" style="padding-left: 5vw;margin-top: 8px;">Вес крысы (в граммах)</p><input type="number" data-aos="fade" data-aos-duration="300" data-aos-delay="800" id="ves_c" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;color: var(--bs-white);" placeholder="Вес крысы">
+    <p data-aos="fade" data-aos-duration="300" data-aos-delay="900" style="padding-left: 5vw;margin-top: 8px;">Дозировка для человека (в милиграммах)</p><input type="number" data-aos="fade" data-aos-duration="300" data-aos-delay="1000" id="doza" style="margin-left: 5vw;width: 90vw;background: var(--bs-border-color-translucent);border-style: none;color: var(--bs-white);" placeholder="Дозировка">
+    <p data-aos="fade" data-aos-duration="300" data-aos-delay="1100" id="1" style="padding-left: 5vw;margin-top: 1.5vh;">Доза крысы:</p><img data-aos="fade" data-aos-duration="300" data-aos-delay="1200" style="border-radius: 1vh;width: 90vw;margin-left: 5vw;" src="assets/img/1649614369_2-kartinkof-club-p-ugarnie-kartinki-pro-kris-2.jpg">
     <footer class="fixed-bottom" style="background: var(--bs-border-color-translucent);color: var(--bs-white);border-radius: 0;border-top-left-radius: 1vh;border-top-right-radius: 1vh;">
         <p style="padding-top: 2vh;--bs-link-color: var(--bs-gray-900);color: var(--bs-gray-600);text-align: center;">with &lt;3 from <a href="https://vk.com/ananasjkk">@ananasjkk</a></p>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
     <script src="assets/js/calculate.js"></script>
 </body>
