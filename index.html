@@ -2,23 +2,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
 <body>
 <p>
+    Вес человека (килограммы) <br>
     <input type="number" id="ves_ch" placeholder="Вес человека">
 </p>
 <p>
+    Вес крысы (граммы) <br>
     <input type="number" id="ves_c" placeholder="Вес крысы">
 </p>
 <p>
+    Доза для человека (миллиграммы)<br>
     <input type="number" id="doza" placeholder="Доза человека">
 </p>
 <p id="1">
     Доза крысы:
 </p>
-<p>
-    <input id="button" type="submit" name="button" onclick="calculate();" value="enter"/>
-</p>
 
 <script>
     const str = "Доза крысы: "
+    document.addEventListener("keyup", calculate);
     function calculate() {
         var ves_ch = document.getElementById("ves_ch").value;
         var ves_c = document.getElementById("ves_c").value;
